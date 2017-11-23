@@ -1,0 +1,638 @@
+h1, h2, h3, h4, h5, h6, form, p, ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+input, textarea, button, select {
+  outline: 0; }
+
+div.wrapper {
+  width: 1200px;
+  margin: auto; }
+
+body {
+  background-color: #EEEEEE; }
+
+header {
+  background-color: #FFFFFF; }
+  header div.wrapper div.top {
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header div.wrapper div.top div.left {
+      position: absolute;
+      width: calc((100% - 1200px) / 2 + 80px);
+      height: 100px;
+      background-color: #FFFFFF;
+      left: 0;
+      top: 0;
+      z-index: 2; }
+      header div.wrapper div.top div.left:after {
+        content: "";
+        width: 60px;
+        height: 40px;
+        position: absolute;
+        top: 60px;
+        right: -60px;
+        background-image: url("../images/whiteangle.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+    header div.wrapper div.top a.logo {
+      width: 70px;
+      height: 70px;
+      display: block;
+      background-image: url("../images/logo.png");
+      position: relative;
+      top: 15px;
+      z-index: 2; }
+    header div.wrapper div.top nav ul.menu li {
+      list-style-type: none;
+      float: left;
+      padding: 0 35px; }
+      header div.wrapper div.top nav ul.menu li a {
+        font-size: 16px;
+        color: #303E5A;
+        text-transform: uppercase;
+        font-weight: bold; }
+    header div.wrapper div.top div.lang select#lan {
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(51, 51, 51, 0.3);
+      font-size: 12px;
+      color: #AD976D;
+      font-weight: bold;
+      padding: 0 10px; }
+  header div.wrapper div.line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #AD976D; }
+  header div.wrapper div.login {
+    position: relative;
+    z-index: 1;
+    padding-left: 140px;
+    height: 30px;
+    background-color: #AD976D;
+    float: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 6px;
+    border-radius: 0 0 1px 0; }
+    header div.wrapper div.login:after {
+      content: "";
+      width: 50px;
+      height: 30px;
+      background-image: url("../images/brownangle.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      right: -50px;
+      background-size: cover; }
+    header div.wrapper div.login ul li {
+      list-style-type: none;
+      float: left;
+      padding: 0 18px;
+      border-right: 1px solid #FFFFFF; }
+      header div.wrapper div.login ul li a {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase; }
+    header div.wrapper div.login ul li:last-child {
+      border: none; }
+
+main.hotel {
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  height: calc(100vh - 66px);
+  margin-top: 6px; }
+
+main {
+  width: 100%;
+  box-sizing: border-box;
+  float: left; }
+  main div#mainslider .owl-controls {
+    top: 50% !important;
+    left: calc((100% - 1200px) / 2);
+    position: absolute; }
+    main div#mainslider .owl-controls span {
+      opacity: 1;
+      background-color: #AD976D; }
+    main div#mainslider .owl-controls div.owl-page.active span {
+      background-color: #FFFFFF; }
+  main div#mainslider div.item {
+    width: 100%;
+    height: calc(100vh - 66px);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  main div.about {
+    width: 760px;
+    padding: 10px;
+    background-color: rgba(27, 44, 77, 0.9);
+    position: absolute;
+    top: calc(50% + 40px);
+    left: calc((100% - 1200px) / 2);
+    box-sizing: border-box; }
+    main div.about > div {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #AE976D;
+      padding: 25px 15px;
+      box-sizing: border-box; }
+      main div.about > div h2 {
+        font-size: 20px;
+        color: #AC976C; }
+      main div.about > div div {
+        margin-top: 35px; }
+        main div.about > div div p {
+          font-size: 12px;
+          color: #FFFFFF;
+          margin-bottom: 25px; }
+  main section.rooms {
+    float: left;
+    width: 100%;
+    margin-top: 30px; }
+    main section.rooms div.wrapper a.sec {
+      display: block;
+      width: 590px;
+      height: 392px;
+      background-image: url("../images/stroom.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px; }
+      main section.rooms div.wrapper a.sec:nth-child(2n) {
+        margin-right: 0; }
+      main section.rooms div.wrapper a.sec div.room {
+        width: 340px;
+        height: 270px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(27, 44, 77, 0.9);
+        padding: 10px;
+        box-sizing: border-box; }
+        main section.rooms div.wrapper a.sec div.room div {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #AE976D;
+          padding: 25px 15px;
+          box-sizing: border-box; }
+          main section.rooms div.wrapper a.sec div.room div h3 {
+            font-size: 20px;
+            color: #AC976C; }
+          main section.rooms div.wrapper a.sec div.room div p {
+            margin-top: 35px;
+            font-size: 12px;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+            line-height: 140%; }
+  main section.roominner {
+    margin-top: 30px; }
+    main section.roominner div.wrapper div.desc {
+      width: 600px;
+      height: 710px;
+      background-color: #1B2C4D;
+      margin-bottom: 30px;
+      padding: 10px;
+      box-sizing: border-box;
+      float: left; }
+      main section.roominner div.wrapper div.desc div {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #AE976D;
+        padding: 25px 15px;
+        box-sizing: border-box; }
+        main section.roominner div.wrapper div.desc div h3 {
+          font-size: 20px;
+          color: #AC976C; }
+        main section.roominner div.wrapper div.desc div p {
+          margin-top: 25px;
+          font-size: 12px;
+          color: #FFFFFF;
+          margin-bottom: 25px;
+          line-height: 140%; }
+        main section.roominner div.wrapper div.desc div ul.facilities {
+          margin-top: 30px; }
+          main section.roominner div.wrapper div.desc div ul.facilities li {
+            list-style-type: none;
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 140%; }
+        main section.roominner div.wrapper div.desc div a.booknow {
+          display: block;
+          line-height: 45px;
+          text-align: center;
+          width: 260px;
+          height: 45px;
+          margin-top: 20px;
+          background-color: #AD976D;
+          border: 0;
+          cursor: pointer;
+          font-size: 12px;
+          color: #FFFFFF; }
+    main section.roominner div.wrapper div.slider {
+      width: 600px;
+      height: 710px;
+      float: left; }
+      main section.roominner div.wrapper div.slider div#roomslider {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        main section.roominner div.wrapper div.slider div#roomslider .owl-controls {
+          bottom: 10px;
+          left: 10px;
+          position: absolute; }
+          main section.roominner div.wrapper div.slider div#roomslider .owl-controls span {
+            opacity: 1;
+            background-color: #AD976D; }
+          main section.roominner div.wrapper div.slider div#roomslider .owl-controls div.owl-page.active span {
+            background-color: #FFFFFF; }
+        main section.roominner div.wrapper div.slider div#roomslider div.item {
+          width: 100%;
+          height: 710px;
+          background-size: cover;
+          background-repeat: no-repeat; }
+  main section.services {
+    margin-top: 30px; }
+    main section.services div.wrapper div.service {
+      width: 380px;
+      height: 270px;
+      background-color: #1B2C4D;
+      padding: 10px;
+      box-sizing: border-box;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px; }
+      main section.services div.wrapper div.service:nth-child(3n) {
+        margin-right: 0; }
+      main section.services div.wrapper div.service div {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #AE976D;
+        padding: 10px 15px;
+        box-sizing: border-box; }
+        main section.services div.wrapper div.service div img {
+          width: 80px;
+          height: 62px; }
+        main section.services div.wrapper div.service div h3 {
+          margin-top: 25px;
+          font-size: 20px;
+          color: #AC976C; }
+        main section.services div.wrapper div.service div p {
+          margin-top: 20px;
+          font-size: 12px;
+          color: #FFFFFF;
+          margin-bottom: 25px;
+          line-height: 140%; }
+  main section.booknow {
+    margin-top: 30px; }
+    main section.booknow div.wrapper div.left {
+      width: 600px;
+      height: 710px;
+      background-color: #1B2C4D;
+      padding: 10px;
+      box-sizing: border-box;
+      float: left;
+      margin-bottom: 20px; }
+      main section.booknow div.wrapper div.left div {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #AE976D;
+        padding: 10px 15px;
+        box-sizing: border-box; }
+        main section.booknow div.wrapper div.left div h3 {
+          margin-top: 15px;
+          font-size: 20px;
+          color: #AC976C; }
+        main section.booknow div.wrapper div.left div table {
+          border-collapse: collapse;
+          padding: 0;
+          font-size: 12px;
+          color: #FFFFFF;
+          width: 100%;
+          margin-top: 30px; }
+          main section.booknow div.wrapper div.left div table tr td {
+            padding-bottom: 20px; }
+            main section.booknow div.wrapper div.left div table tr td label {
+              display: block;
+              margin-bottom: 5px; }
+            main section.booknow div.wrapper div.left div table tr td input[type='text'] {
+              width: 100%;
+              height: 45px;
+              box-sizing: border-box;
+              border: 1px solid #FFFFFF;
+              background-color: transparent;
+              color: #FFFFFF; }
+            main section.booknow div.wrapper div.left div table tr td input.date {
+              background-image: url("../images/calendar.png");
+              background-repeat: no-repeat;
+              background-position: calc(100% - 10px) center; }
+            main section.booknow div.wrapper div.left div table tr td textarea {
+              width: 100%;
+              height: 180px;
+              box-sizing: border-box;
+              border: 1px solid #FFFFFF;
+              resize: none;
+              background-color: transparent;
+              color: #FFFFFF; }
+          main section.booknow div.wrapper div.left div table tr td:first-child {
+            border-right: 20px solid transparent; }
+          main section.booknow div.wrapper div.left div table tr td[colspan='2'] {
+            border: 0; }
+            main section.booknow div.wrapper div.left div table tr td[colspan='2'] input[type='submit'] {
+              width: 260px;
+              height: 45px;
+              text-transform: uppercase;
+              display: block;
+              margin: auto;
+              background-color: #AD976D;
+              border: 0;
+              color: #FFFFFF;
+              font-size: 12px;
+              cursor: pointer; }
+    main section.booknow div.wrapper div.right {
+      width: 600px;
+      height: 710px;
+      float: left;
+      background-image: url("../images/slide.fw.png");
+      background-size: cover;
+      background-repeat: no-repeat; }
+  main section.contact {
+    margin-top: 30px; }
+    main section.contact div.wrapper div.left {
+      width: 600px;
+      height: 710px;
+      background-color: #1B2C4D;
+      padding: 10px;
+      box-sizing: border-box;
+      float: left;
+      margin-bottom: 20px; }
+      main section.contact div.wrapper div.left > div {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #AE976D;
+        padding: 10px 15px;
+        box-sizing: border-box; }
+        main section.contact div.wrapper div.left > div h3 {
+          margin-top: 15px;
+          font-size: 20px;
+          color: #AC976C; }
+        main section.contact div.wrapper div.left > div div.address {
+          margin-top: 10px;
+          margin-bottom: 40px; }
+          main section.contact div.wrapper div.left > div div.address ul li {
+            list-style-type: none;
+            color: #FFFFFF;
+            font-size: 12px; }
+            main section.contact div.wrapper div.left > div div.address ul li span.title {
+              display: block;
+              margin-top: 20px;
+              text-transform: uppercase; }
+        main section.contact div.wrapper div.left > div table {
+          border-collapse: collapse;
+          padding: 0;
+          font-size: 12px;
+          color: #FFFFFF;
+          width: 100%;
+          margin-top: 30px; }
+          main section.contact div.wrapper div.left > div table tr td {
+            padding-bottom: 20px; }
+            main section.contact div.wrapper div.left > div table tr td label {
+              display: block;
+              margin-bottom: 5px; }
+            main section.contact div.wrapper div.left > div table tr td input[type='text'] {
+              width: 100%;
+              height: 45px;
+              box-sizing: border-box;
+              border: 1px solid #FFFFFF;
+              background-color: transparent;
+              color: #FFFFFF; }
+            main section.contact div.wrapper div.left > div table tr td textarea {
+              width: 100%;
+              height: 180px;
+              box-sizing: border-box;
+              border: 1px solid #FFFFFF;
+              resize: none;
+              background-color: transparent;
+              color: #FFFFFF; }
+          main section.contact div.wrapper div.left > div table tr td:first-child {
+            border-right: 20px solid transparent; }
+          main section.contact div.wrapper div.left > div table tr td[colspan='2'] {
+            border: 0; }
+            main section.contact div.wrapper div.left > div table tr td[colspan='2'] input[type='submit'] {
+              width: 260px;
+              height: 45px;
+              text-transform: uppercase;
+              display: block;
+              margin: auto;
+              background-color: #AD976D;
+              border: 0;
+              color: #FFFFFF;
+              font-size: 12px;
+              cursor: pointer; }
+    main section.contact div.wrapper div#googleMap {
+      width: 600px;
+      height: 710px;
+      float: left; }
+
+/* footer section */
+footer {
+  height: 135px;
+  width: 100%;
+  position: relative;
+  float: left; }
+  footer div.left {
+    width: calc((100% - 1200px) / 2 + 768px);
+    height: 82px;
+    background-color: #1B2C4D;
+    position: absolute; }
+    footer div.left:after {
+      content: "";
+      width: 114px;
+      height: 82px;
+      display: block;
+      background-image: url("../images/blueangle.png");
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: -114px; }
+  footer div.wrapper {
+    position: relative;
+    z-index: 2;
+    height: 135px; }
+    footer div.wrapper a.logo {
+      width: 63px;
+      height: 63px;
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: 15px;
+      background-image: url("../images/logowhite.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 3; }
+    footer div.wrapper h4 {
+      font-size: 20px;
+      color: #FFFFFF;
+      position: absolute;
+      left: 108px;
+      top: 35px;
+      text-transform: uppercase; }
+    footer div.wrapper ul.address {
+      -webkit-column-count: 3;
+         -moz-column-count: 3;
+              column-count: 3;
+      position: absolute;
+      top: 70px;
+      left: 108px; }
+      footer div.wrapper ul.address li {
+        font-size: 14px;
+        color: #FFFFFF;
+        list-style-type: none;
+        margin-right: 15px; }
+    footer div.wrapper span.copy {
+      position: absolute;
+      right: 0;
+      bottom: 19.5px;
+      display: block;
+      font-size: 14px;
+      color: #FFFFFF; }
+  footer div.line {
+    height: 53px;
+    width: 100%;
+    background-color: #1B2C4D;
+    position: absolute;
+    bottom: 0; }
+
+/* welcome screen */
+div.welcome {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  div.welcome div.description {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: rgba(27, 44, 77, 0.9);
+    position: relative;
+    padding-top: calc(50vh + 40px);
+    box-sizing: border-box;
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    margin-top: 100vh; }
+    div.welcome div.description a.more {
+      width: 50px;
+      height: 50px;
+      background-color: #AC976C;
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+      border-radius: 50%;
+      background-image: url("../images/arrowright.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    div.welcome div.description span {
+      display: block; }
+  div.welcome a.logo {
+    width: 144px;
+    height: 144px;
+    background-image: url("../images/logowhite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    z-index: 5; }
+  div.welcome div.desc {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-color: #1B2C4D;
+    position: relative; }
+    div.welcome div.desc div {
+      width: 310px;
+      margin: auto;
+      position: absolute;
+      top: calc(50% - 144px);
+      left: calc(50% - 155px); }
+      div.welcome div.desc div h2 {
+        font-size: 20px;
+        color: #AC976C; }
+      div.welcome div.desc div p {
+        font-size: 12px;
+        color: #FFFFFF;
+        margin-top: 40px;
+        line-height: 140%; }
+  div.welcome div.butique {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-image: url("../images/welcome1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    div.welcome div.butique a.logo {
+      top: calc(50% - 144px);
+      left: calc(50% - 72px); }
+    div.welcome div.butique:hover div.description {
+      margin-top: 0; }
+  div.welcome div.terrace {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-image: url("../images/welcome2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    div.welcome div.terrace a.logo {
+      top: calc(50% + 144px);
+      left: calc(50% - 72px); }
+    div.welcome div.terrace div.description {
+      padding-top: calc(50vh + 328px); }
+    div.welcome div.terrace:hover div.description {
+      margin-top: 0; }
+  div.welcome div.travel {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-image: url("../images/welcome3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    div.welcome div.travel a.logo {
+      top: calc(50% - 144px);
+      left: calc(50% - 72px); }
+    div.welcome div.travel:hover div.description {
+      margin-top: 0; }
+
+/*# sourceMappingURL=style.css.map */

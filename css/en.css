@@ -1,0 +1,58 @@
+div.welcome div.desc div h2{
+	font-family: "Helvetica 65";
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+div.welcome div.desc div p{
+	font-family: "Helvetica 65";
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+div.welcome div.description span{
+	font-family: "Helvetica 65";
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+header div.wrapper div.top nav ul.menu li a{
+	font-family: "nevis";
+}
+
+header div.wrapper div.top div.lang select#lan{
+	font-family: "calibril";
+	text-transform: uppercase;
+	font-size: 10px;
+}
+header div.wrapper div.login ul li a{
+	font-family: "nevis";
+}
+main section.contact div.wrapper div.left > div h3, main section.booknow div.wrapper div.left div h3, main section.services div.wrapper div.service div h3, main section.rooms div.wrapper a.sec div.room div h3, main section.roominner div.wrapper div.desc div h3, main div.about > div h2{
+	font-family: "Helvetica 65";
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+main section.contact div.wrapper div.left > div div.address, main section.services div.wrapper div.service div p, main section.rooms div.wrapper a.sec div.room div p, main section.roominner div.wrapper div.desc div p, main section.roominner div.wrapper div.desc div ul.facilities, main div.about > div div p{
+	font-family: "Helvetica 65";
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+main section.contact div.wrapper div.left > div table tr td label, main section.booknow div.wrapper div.left div table tr td label{
+	font-family: "Helvetica 65";
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+main section.contact div.wrapper div.left > div table tr td[colspan='2'] input[type='submit'], main section.booknow div.wrapper div.left div table tr td[colspan='2'] input[type='submit'], main section.roominner div.wrapper div.desc div a.booknow{
+	font-family: "Helvetica 65";
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+footer div.wrapper h4{
+	font-family: "DIN";
+}
+
+footer{
+	font-family: "DIN3";
+	font-weight: normal;
+}
